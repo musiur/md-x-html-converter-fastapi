@@ -1,0 +1,142 @@
+<table style="width:6%;">
+<colgroup>
+<col style="width: 5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># Knowledge Base Service</td>
+</tr>
+<tr class="even">
+<td>This service is used to store and retrieve knowledge base documents
+of ActionBoard.ai’s ActionBoard resources.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="codebase-guidelines">Codebase Guidelines</h1>
+<p>Please follow the following guidelines for the codebase.</p>
+<h2 id="project-structure">1. Project Structure</h2>
+<p>The project is organized into the following folders:</p>
+<ul>
+<li><code>.github</code>: Contains the GitHub Actions workflows.</li>
+<li><code>backend</code>: Contains the backend code.</li>
+<li><code>frontend</code>: Contains the frontend code.</li>
+<li><code>docs</code>: Contains the project documentation.</li>
+<li><code>README.md</code>: Contains the project overview and codebase
+guidelines.</li>
+</ul>
+<h2 id="file-naming-conventions">2. File Naming Conventions</h2>
+<ul>
+<li>Use <code>kebab-case</code> for file names.</li>
+</ul>
+<h2 id="code-guidelines">3. Code Guidelines</h2>
+<ul>
+<li>Use TypeScript for the codebase.</li>
+<li>Use ESLint for linting.</li>
+<li>Use Prettier for formatting.</li>
+<li>Use <code>pascalCase</code> for function and class names.</li>
+<li>Use <code>camelCase</code> for variable names.</li>
+<li>Use <code>UPPERCASE</code> for constants.</li>
+<li>Use <code>snake_case</code> for database table names.</li>
+</ul>
+<h2 id="branching-strategy">4. Branching Strategy</h2>
+<p>We use the following branching strategy:</p>
+<ul>
+<li><code>main</code>: The default branch.</li>
+<li><code>deployment-dev</code>: The development branch.</li>
+<li><code>deployment-prod</code>: The production branch.</li>
+<li><code>deployment-stage</code>: The staging branch.</li>
+<li><code>feature/...</code>: A feature branch.</li>
+<li><code>bug/...</code>: A bug fix branch.</li>
+<li><code>hotfix/...</code>: A hotfix branch.</li>
+<li><code>release/...</code>: A release branch.</li>
+<li><code>docs/...</code>: A documentation branch.</li>
+<li><code>chore/...</code>: A chore branch.</li>
+</ul>
+<h2 id="commit-messages">5. Commit Messages</h2>
+<p>We use the following commit message conventions:</p>
+<ul>
+<li><code>feat</code>: A new feature.</li>
+<li><code>fix</code>: A bug fix.</li>
+<li><code>perf</code>: A performance improvement.</li>
+<li><code>refactor</code>: A code change that neither fixes a bug nor
+adds a feature.</li>
+<li><code>style</code>: A code change that does not affect the meaning
+of the code (white-space, formatting, etc).</li>
+<li><code>test</code>: A code change that adds missing tests.</li>
+<li><code>chore</code>: A code change that neither fixes a bug nor adds
+a feature.</li>
+<li><code>docs</code>: A code change that updates the
+documentation.</li>
+<li><code>build</code>: A code change that affects the build system or
+external dependencies.</li>
+<li><code>ci</code>: A code change that affects the CI/CD
+configuration.</li>
+<li><code>revert</code>: A code change that reverts a previous
+commit.</li>
+<li><code>workflow</code>: A code change that affects the GitHub Actions
+workflows.</li>
+</ul>
+<p>Example:</p>
+<pre class="cmd"><code>feat: add new feature #2
+fix: fix bug #1
+perf: improve performance #3
+refactor: refactor code #4
+style: style code #5
+test: add tests #6
+chore: chore code #7
+docs: update documentation #8
+build: build code #9
+ci: update CI/CD configuration #10
+revert: revert previous commit #11
+workflow: update GitHub Actions workflows #12</code></pre>
+<p><strong>At the trailing of the commit message, add the issue
+number.</strong></p>
+<h2 id="documentation">6. Documentation</h2>
+<p>We use the following documentation conventions:</p>
+<ul>
+<li>Use Markdown for the documentation.</li>
+<li>Use the following format for the documentation:</li>
+<li><code># &lt;title&gt;</code></li>
+<li><code>## &lt;subtitle&gt;</code></li>
+<li><code>### &lt;tertiary title&gt;</code></li>
+<li><code>#### &lt;quaternary title&gt;</code></li>
+<li><code>##### &lt;quinary title&gt;</code></li>
+<li><code>###### &lt;senary title&gt;</code></li>
+<li><code>[description]</code></li>
+<li><code>[details]</code></li>
+<li><code>[example]</code></li>
+<li><code>[see also]</code></li>
+</ul>
+<h2 id="error-handling">7. Error Handling</h2>
+<p>We use the following error handling conventions:</p>
+<ul>
+<li>Use the <code>Error</code> class to create custom errors.</li>
+<li>Use the <code>try-catch</code> block to handle errors.</li>
+<li>Use the <code>throw</code> statement to throw an error.</li>
+<li>Use the <code>console.error</code> function to log an error.</li>
+<li>Use the <code>console.log</code> function to log a message.</li>
+<li>Use the <code>console.warn</code> function to log a warning.</li>
+<li>Use the <code>console.info</code> function to log an info
+message.</li>
+<li>Use the <code>console.debug</code> function to log a debug
+message.</li>
+</ul>
+<h2 id="logging">8. Logging</h2>
+<p>We use the following logging conventions:</p>
+<ul>
+<li>Use the <code>console.log</code> function to log a message.</li>
+<li>Use the <code>console.warn</code> function to log a warning.</li>
+<li>Use the <code>console.info</code> function to log an info
+message.</li>
+<li>Use the <code>console.debug</code> function to log a debug
+message.</li>
+</ul>
+<h2 id="environment-variables">9. Environment Variables</h2>
+<p>We use the following environment variables:</p>
+<ul>
+<li><code>NODE_ENV</code>: The environment
+(e.g. <code>development</code>, <code>production</code>,
+<code>staging</code>, <code>local</code>).</li>
+</ul>
+<p>Use <code>.env.local</code> for local development on your
+machine.</p>
